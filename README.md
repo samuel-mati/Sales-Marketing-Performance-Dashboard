@@ -10,24 +10,24 @@ This Power BI dashboard offers a powerful, interactive view into sales and marke
 
 ### 1. Executive Overview
 A strategic summary for C-level stakeholders:
-- 📈 **Total Sales** and **Total Profit** with Year-over-Year (YoY) Growth
-- 🧭 **Top/Bottom States** by Sales and Profit
-- 💡 **Performance by Segment and Category**
-- 📆 Monthly and Quarterly Trend Lines
+- 📈 **Total Sales** and **Total Orders** with Year-over-Year (YoY) Growth
+- 🧭 **Top/Bottom Regions** by Sales
+- 💡 **Performance by Sub-Category**
+- 📆 Monthly aTrend Lines
 
 ### 2. Regional Performance
 Uncover geographic trends and contribution:
-- 🗺️ **Sales and Profit by State and Region**
+- 🗺️ **Sales by State and Region**
 - 📦 **Order Volumes**
-- 👤 **Customer Base Overview**
-- 🔁 **Repeat Customer Metrics**
+- 👤 **Monthly Orders per Region**
+- 🔁 **Order Distribution by Category**
 
 ### 3. Product Performance
 Zoom in on what’s working:
 - 🏷️ **Top & Bottom Performing Products**
-- 📊 **Sales/Profit by Sub-Category**
+- 📊 **Sales by Sub-Category**
 - ⚖️ **Discount Effects and Price Trends**
-- 📉 **Units Sold vs Profit**
+- 📉 **Units Sold vs Sales**
 
 ### 4. Customer Insights
 Focus on audience behaviors and marketing outcomes:
