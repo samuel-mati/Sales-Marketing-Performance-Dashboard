@@ -84,10 +84,10 @@ This dashboard equips teams to:
 
 ## 📸 Sample Visuals
 
-![Executive Overview](screenshots/overview.png)  
+![Executive Overview](screenshots/executive.png)  
 ![Regional Performance](screenshots/regional.png)  
 ![Product Performance](screenshots/product.png)  
-![Customer Insights](/screenshots/customers.png)
+![Customer Insights](/screenshots/customer.png)
 
 ---
 
