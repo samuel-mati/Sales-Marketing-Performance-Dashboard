@@ -1,19 +1,19 @@
-# 📊 Sales & Marketing Performance Dashboard for a Multi-Regional Retail Chain
+# Sales & Marketing Performance Dashboard for a Multi-Regional Retail Chain
 
-## 🧾 Project Summary
+## Project Summary
 
 This Power BI dashboard offers a powerful, interactive view into sales and marketing performance for a multi-regional retail business. Built for decision-makers, it simplifies complex datasets into meaningful KPIs and visuals to support real-time insights, strategic planning, and operational excellence.
 
 ---
 
-## 📂 Dashboard Pages
+## Dashboard Pages
 
 ### 1. Executive Overview
 A strategic summary for C-level stakeholders:
-- 📈 **Total Sales** and **Total Orders** with Year-over-Year (YoY) Growth
-- 🧭 **Top/Bottom Regions** by Sales
-- 💡 **Performance by Sub-Category**
-- 📆 Monthly aTrend Lines
+- **Total Sales** and **Total Orders** with Year-over-Year (YoY) Growth
+- **Top/Bottom Regions** by Sales
+- **Performance by Sub-Category**
+- **Monthly Trend Lines**
 
 ### 2. Regional Performance
 Uncover geographic trends and contribution:
@@ -40,7 +40,7 @@ Focus on audience behaviors and marketing outcomes:
 
 ## ⚙️ Technical Highlights
 
-- ✅ **Custom DAX Measures** used in the dashboard:
+- **Custom DAX Measures** used in the dashboard:
   - `Total Profit = SUM(Superstore[Profit])`
   - `Profit Margin = DIVIDE([Total Profit], [Total Sales])`
   - `YoY Sales Growth = DIVIDE(([Total Sales] - [PY Sales]), [PY Sales])`
@@ -49,16 +49,16 @@ Focus on audience behaviors and marketing outcomes:
   - `Customer Count = DISTINCTCOUNT(Superstore[Customer ID])`
   - `Top N Products = TOPN(10, VALUES(Superstore[Product Name]), [Total Sales])`
 
-- ✅ **Time Intelligence** leveraging:
+- **Time Intelligence** leveraging:
   - `SAMEPERIODLASTYEAR()`
   - `TOTALYTD()`
   - `DATEADD()` for custom comparisons
 
-- ✅ **Advanced AI Visuals**:
+- **Advanced AI Visuals**:
   - **Key Influencers**: Analyzes what factors influence profit
   - **Decomposition Tree**: Breaks down high/low performance by user-defined categories
 
-- ✅ **Slicers & Filters**:
+- **Slicers & Filters**:
   - Interactive filters by Category, Segment, Region, Year, and Quarter
 
 ---
@@ -66,10 +66,10 @@ Focus on audience behaviors and marketing outcomes:
 ## 💼 Business Value
 
 This dashboard equips teams to:
-- ✅ Monitor sales and profit in real-time across regions
-- ✅ Identify high-performing products and struggling areas
-- ✅ Understand customer segments and their behaviors
-- ✅ Align marketing and sales efforts with data insights
+- Monitor sales and profit in real-time across regions
+- Identify high-performing products and struggling areas
+- Understand customer segments and their behaviors
+- Align marketing and sales efforts with data insights
 
 ---
 
