@@ -1,12 +1,11 @@
-# Executive Sales & Performance Dashboard  
-
-![Executive Overview](screenshots/executive.png)
+# Product and Sales Performance Analysis
 
 ## Executive Summary
 
 The company faced a challenge: despite growing sales, executives lacked visibility into which regions, products, and customer segments were driving revenue and profitability. This limited their ability to allocate marketing budgets effectively and optimize product performance.  
 
 To address this, I built a **Power BI dashboard** consolidating multi-regional retail sales data. The dashboard provides a **unified view of performance metrics**, highlights growth opportunities, and uncovers customer behavior patterns.  
+![Executive Overview](screenshots/executive.png)
 
 **Key outcomes achieved:**  
 - **Total Sales:** 10.1M (+28.7% YoY)  
