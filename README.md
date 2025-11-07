@@ -2,32 +2,55 @@
 
 ![Executive Overview](screenshots/executive.png)
 
-## Executive Summary  
-This Power BI dashboard translates sales data into **actionable business intelligence** for a multi-regional retail chain.  
+## Executive Summary
 
-It reveals **growth opportunities, regional dynamics, and customer performance trends** that directly impact revenue, profitability, and marketing efficiency.  
-The goal isn’t to visualize data — it’s to **drive strategic decisions** that strengthen market position and improve ROI.  
+The company faced a challenge: despite growing sales, executives lacked visibility into which regions, products, and customer segments were driving revenue and profitability. This limited their ability to allocate marketing budgets effectively and optimize product performance.  
+
+To address this, I built a **Power BI dashboard** consolidating multi-regional retail sales data. The dashboard provides a **unified view of performance metrics**, highlights growth opportunities, and uncovers customer behavior patterns.  
+
+**Key outcomes achieved:**  
+- **Total Sales:** 10.1M (+28.7% YoY)  
+- **Customer Base:** 500 (+53.8% YoY)  
+- **Sales per Customer:** 20.2K (identified retention gap)  
+- **Average Order Value:** 14.83K (stabilized pricing insights)  
+
+The dashboard enabled leadership to prioritize high-performing regions, optimize product portfolios, and design retention-driven marketing strategies. **Next steps** include integrating marketing ROI tracking, predictive forecasting, and A/B testing on pricing in underperforming regions.
 
 
-## Business Context  
+## Business Problem
 
-The company operates across **four regions** and multiple store locations with diverse product lines.  
-While overall sales were growing, leadership lacked clarity on:
+The company operates across **four regions** with multiple store locations and diverse product lines.  
+Despite overall sales growth, leadership lacked visibility into:
+
 - Which regions were most profitable  
 - Where performance was stagnating  
 - How customer behavior and order patterns were shifting  
 
-This dashboard was designed to provide **a unified business view** — enabling executives to move from *guesswork to data-backed strategy.*
+This lack of insight limited their ability to **make data-driven decisions**, allocate resources efficiently, and optimize product and regional strategies.  
+The dashboard was created to provide a **unified view of performance metrics**, enabling executives to move from *guesswork to strategic action*.
+
+## Methodology
+
+To address the business problem, the following approach was applied using Power BI:
+
+1. **Data Preparation & Modeling**  
+   - Imported and cleaned multi-regional retail sales data using **Power Query**.  
+   - Created relationships between tables to enable accurate analysis across regions, products, and customers.
+
+2. **KPI & Metric Development**  
+   - Developed key business metrics such as **Total Sales, Average Order Value, Customer Count, and YoY Growth** using **DAX measures**.  
+   - Calculated insights like **profit margin, sales per customer, and month-over-month growth** directly in Power BI.
+
+3. **Dashboard Design & Visualization**  
+   - Built interactive visuals to track **regional and product performance**, sales trends, and customer behavior.  
+   - Integrated **slicers and filters** to allow executives to drill down by region, category, and time period.
+
+4. **Insight Generation**  
+   - Interpreted the visualized data to provide actionable recommendations on **regional prioritization, product portfolio optimization, and customer retention strategies**.
+
+**Skills Applied:** Power BI (data modeling, DAX, interactive dashboards, slicers & visuals), Analytical Thinking (trend detection, problem-solving), Business Interpretation (actionable insights from data).
 
 
-## Business Objectives  
-
-| Objective | Strategic Value |
-|:-----------|:----------------|
-| Track regional and category-level sales performance | Identify growth and underperforming markets |
-| Measure customer acquisition and retention health | Align marketing spend with customer lifetime value |
-| Evaluate product performance by sub-category | Optimize pricing and promotion strategies |
-| Monitor YoY performance metrics | Support annual planning and forecasting |
 
 
 ##  Key Business Insights  
@@ -40,94 +63,36 @@ This dashboard was designed to provide **a unified business view** — enabling 
 | **Sales per Customer** | 20.20K | 🔻 16.4% | Customer spend dropped – retention or cross-sell gap |
 | **Average Order Value** | 14.83K | 🔻 1.9% | Stable order size – suggests competitive pricing pressure |
 
-**Business Impact:**  
-The company is acquiring customers rapidly, but not maximizing value per customer.  
-This signals a need for **retention-driven marketing** and **loyalty programs** to lift average revenue per user.
+## Skills
 
+- **Power BI:** Data modeling, DAX measures, interactive dashboards, slicers & filters  
+- **Data Preparation:** Power Query, data cleaning, table relationships  
+- **Analytics:** Trend analysis, KPI design, month-over-month growth calculations  
+- **Business Interpretation:** Translating data into actionable recommendations
 
-## Regional Performance Insights  
+## Results & Business Recommendations
 
-| Region | Sales (M) | % Contribution | Business View |
-|:--------|-----------:|:---------------:|:--------------|
-| **Eastern** | 3.27 | 32.4% | Core growth engine – strong repeat sales |
-| **Central** | 3.13 | 31.0% | Solid performer – consistent YoY improvement |
-| **Western** | 1.90 | 18.8% | Stable but slow – opportunity for targeted campaigns |
-| **Coast** | 1.79 | 17.7% | Underperforming – needs promotional boost |
+**Key Findings:**
+- **Total Sales:** 10.1M (+28.7% YoY) — strong overall growth, driven by Eastern and Central regions.  
+- **Customer Base:** 500 (+53.8% YoY) — excellent acquisition, but **average sales per customer decreased**, indicating a retention or cross-sell gap.  
+- **Regional Performance:** Eastern and Central regions are top performers; Coast and Western regions are underperforming.  
+- **Product Performance:** Laptops and pens are top revenue drivers; low-margin SKUs like paper and chairs show declining traction.  
+- **Monthly Trends:** Sales peak in March–April, dip in June–July — seasonal patterns impact revenue flow.  
 
-**Actionable Takeaway:**  
-Double down on Eastern and Central for ROI-driven investments.  
-Develop **market penetration plans** for Western and Coast regions.
+**Business Recommendations:**
+1. **Retention & Loyalty Programs:** Implement strategies to increase spend per customer and cross-sell opportunities.  
+2. **Regional Focus:** Prioritize marketing and sales investment in Eastern and Central regions; pilot promotions in Coast and Western regions.  
+3. **Product Portfolio Optimization:** Promote high-margin products (e.g., laptops, tablets); reprice or bundle low-margin SKUs.  
+4. **Seasonal Campaign Planning:** Address mid-year dips with targeted promotions or limited-time offers.  
+5. **Data-Driven Monitoring:** Expand dashboard KPIs to include marketing ROI and customer segment performance for continuous improvement.
 
+## Next Steps
 
-
-##  Product Category Analysis  
-
-| Sub-Category | Sales (M) | Business Signal |
-|:--------------|-----------:|:----------------|
-| Pen | 1.62 | Strong performer, consistent demand |
-| Laptop | 1.35 | High-margin category – key revenue driver |
-| Stapler | 1.24 | Stable mid-tier performer |
-| Tablet | 1.16 | Growth potential with marketing focus |
-| Bookcase | 1.12 | Moderate contribution |
-| Paper | 0.95 | Volume driver but low profit margin |
-| Desk | 0.95 | Solid performer in office markets |
-| Phone | 0.90 | Price-sensitive – declining margins |
-| Chair | 0.82 | Low traction – candidate for bundling or promo |
-
-**Strategic Opportunity:**  
-Invest in **laptops and tablets** as premium growth segments.  
-Reprice or reposition **low-margin SKUs** like paper and chairs.  
-
-
-## Monthly Performance Overview  
-
-The **sales curve** shows strong momentum in Q1–Q2, peaking in **March and April**, followed by a dip in **June–July**.  
-This pattern aligns with seasonal purchasing behavior — indicating potential for **mid-year promotional interventions** or **inventory optimization**.
-
----
-
-## Business Recommendations  
-
-1. **Loyalty & Retention Strategy** – Develop reward programs to increase spend per customer.  
-2. **Regional Prioritization** – Focus sales and ad budgets on Eastern and Central, while piloting promotions in Coast.  
-3. **Product Portfolio Optimization** – Streamline low-margin SKUs; promote high-margin tech items.  
-4. **Seasonal Campaign Planning** – Counteract Q3 dips with limited-time offers.  
-5. **BI Integration** – Expand dashboard to track marketing spend vs sales ROI in real time.  
-
-## Technical Implementation  
-
-**Tool:** Power BI  
-**Data Source:** Cleaned multi-regional retail dataset (Superstore format)  
-**Core DAX Measures:**  
-```DAX
-Total Profit = SUM(Sales[Profit])
-Profit Margin = DIVIDE([Total Profit], [Total Sales])
-YoY Sales Growth = DIVIDE(([Total Sales] - [PY Sales]), [PY Sales])
-Average Order Value = DIVIDE([Total Sales], DISTINCTCOUNT(Sales[Order ID]))
-Customer Count = DISTINCTCOUNT(Sales[Customer ID])
-```
-
-## Interactive Features  
-
-The dashboard was designed to enhance decision-making through interactive and dynamic analytics.  
-Key interactive features include:
-
-- **Year and City Filters:** Easily switch between time periods and locations for granular insights.  
-- **Region and Category Slicers:** Segment data by geography and product type to uncover trends.  
-- **Dynamic Visuals:**  
-  - KPI Cards for at-a-glance performance metrics  
-  - Trend Lines to track revenue and orders over time  
-  - Donut and Bar Charts to analyze sales composition and regional contribution  
-
----
-
-## Business Value Delivered  
-
-**Enhanced Executive Visibility** — Regional and product-level insights presented in a single, unified dashboard.  
-**Reduced Reporting Turnaround** — Automated data refreshes replaced manual weekly reports.  
-**Improved Decision-Making Speed** — Real-time metrics empower sales and marketing teams to act faster.  
-**Strategic Foundation for Forecasting** — Supports demand planning and customer segmentation initiatives.  
-
+- **Integrate Marketing ROI Data:** Link campaign spend to sales performance to measure return on investment.  
+- **Predictive Analytics:** Develop forecasting models to anticipate sales trends and optimize inventory.  
+- **Customer Segmentation:** Use behavioral data to identify high-value customer segments and target retention strategies.  
+- **A/B Testing:** Test promotions, pricing strategies, and product bundles in underperforming regions.  
+- **Dashboard Enhancements:** Add alerts, drill-throughs, and automated reporting to support real-time executive decisions.
 
 ## 👨‍💼 About the Creator  
 
