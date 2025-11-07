@@ -1,103 +1,106 @@
-# Sales & Marketing Performance Dashboard for a Multi-Regional Retail Chain
-
-## Project Summary
-
-This Power BI dashboard offers a powerful, interactive view into sales and marketing performance for a multi-regional retail business. Built for decision-makers, it simplifies complex datasets into meaningful KPIs and visuals to support real-time insights, strategic planning, and operational excellence.
-
----
-
-## Dashboard Pages
-
-### 1. Executive Overview
-A strategic summary for C-level stakeholders:
-- **Total Sales** and **Total Orders** with Year-over-Year (YoY) Growth
-- **Top/Bottom Regions** by Sales
-- **Performance by Sub-Category**
-- **Monthly Trend Lines**
-
-### 2. Regional Performance
-Uncover geographic trends and contribution:
-- 🗺️ **Sales by State and Region**
-- 📦 **Order Volumes**
-- 👤 **Monthly Orders per Region**
-- 🔁 **Order Distribution by Category**
-
-### 3. Product Performance
-Zoom in on what’s working:
-- 🏷️ **Top & Bottom Performing Products**
-- 📊 **Sales by Sub-Category**
-- ⚖️ **Discount Effects and Price Trends**
-- 📉 **Units Sold vs Sales**
-
-### 4. Customer Insights
-Focus on audience behaviors and marketing outcomes:
-- 👥 **Customer Segments**
-- 🛒 **Spending Habits**
-- 🔍 **Key Influencers (AI Visual)**
-- 🌳 **Decomposition Tree Analysis**
-
----
-
-## ⚙️ Technical Highlights
-
-- **Custom DAX Measures** used in the dashboard:
-  - `Total Profit = SUM(Superstore[Profit])`
-  - `Profit Margin = DIVIDE([Total Profit], [Total Sales])`
-  - `YoY Sales Growth = DIVIDE(([Total Sales] - [PY Sales]), [PY Sales])`
-  - `YoY Profit Growth = DIVIDE(([Total Profit] - [PY Profit]), [PY Profit])`
-  - `Average Order Value = DIVIDE([Total Sales], DISTINCTCOUNT(Superstore[Order ID]))`
-  - `Customer Count = DISTINCTCOUNT(Superstore[Customer ID])`
-  - `Top N Products = TOPN(10, VALUES(Superstore[Product Name]), [Total Sales])`
-
-- **Time Intelligence** leveraging:
-  - `SAMEPERIODLASTYEAR()`
-  - `TOTALYTD()`
-  - `DATEADD()` for custom comparisons
-
-- **Advanced AI Visuals**:
-  - **Key Influencers**: Analyzes what factors influence profit
-  - **Decomposition Tree**: Breaks down high/low performance by user-defined categories
-
-- **Slicers & Filters**:
-  - Interactive filters by Category, Segment, Region, Year, and Quarter
-
----
-
-## 💼 Business Value
-
-This dashboard equips teams to:
-- Monitor sales and profit in real-time across regions
-- Identify high-performing products and struggling areas
-- Understand customer segments and their behaviors
-- Align marketing and sales efforts with data insights
-
----
-
-## 🧰 Requirements
-
-- Microsoft Power BI Desktop (May 2023 or later)
-- Cleaned Superstore-style dataset with:
-  - Proper data types (currency, dates)
-  - No missing values or duplicates
-
----
-
-## 📸 Sample Visuals
+# 🧭 Executive Sales Overview Dashboard  
 
 ![Executive Overview](screenshots/executive.png)  
-![Regional Performance](screenshots/regional.png)  
-![Product Performance](screenshots/product.png)  
-![Customer Insights](/screenshots/customer.png)
+
+## 📘 Project Overview  
+The **Executive Sales Overview Dashboard** is an interactive analytics project that visualizes key sales performance metrics across regions, stores, and product categories.  
+It provides a top-level snapshot of business performance, highlighting growth trends, customer behavior, and product performance to support strategic decision-making.
 
 ---
 
-## 👨‍💻 Developed By
+## 🎯 Business Problem  
+The challenge was the lack of a centralized view of sales performance across multiple business dimensions.  
+Managers had to rely on static reports and fragmented data, making it difficult to track trends or identify key growth areas.  
 
-**Samuel Mati**  
-Data Analyst & Automation Specialist  
-📧 [Email](sammxsaf@gmail.com)  
-🌐 [LinkedIn](https://www.linkedin.com/in/samuel-mati/)
+This dashboard was created to:
+- Consolidate sales data for clear visibility  
+- Enable quick, data-driven decisions  
+- Highlight underperforming segments and opportunities  
 
 ---
 
-> 🚀 *Transforming retail analytics into business clarity.*
+## 🧮 Key Metrics & Insights  
+
+| Metric | Current Value | Change vs PY | Insight |
+|:-------|---------------:|:-------------:|:--------|
+| **Total Sales** | 10.10M | ⬆️ 28.7% | Significant overall growth year-over-year |
+| **Total Orders** | 681 | ⬆️ 31.2% | More customer transactions processed |
+| **Total Customers** | 500 | ⬆️ 53.8% | Strong customer acquisition |
+| **Sales per Customer** | 20.20K | 🔻 16.4% | Slightly lower spend per customer |
+| **Average Order Amount** | 14.83K | 🔻 1.9% | Stable order value, minimal decline |
+
+**Overall Insight:**  
+Sales, orders, and customers have grown impressively, but the drop in average spend per customer signals a need to improve retention or upsell strategies.
+
+---
+
+## 📅 Monthly Sales Trend  
+- Sales climbed steadily from **January to May**, peaking in **March–April**.  
+- A dip occurred in **June–July**, which may indicate **seasonal slowdown or inventory issues**.  
+
+---
+
+## 🌍 Regional Performance  
+
+| Region | Total Sales | % Contribution |
+|:--------|-------------:|:---------------:|
+| **Eastern** | 3.27M | 32.43% |
+| **Central** | 3.13M | 31.02% |
+| **Western** | 1.90M | 18.84% |
+| **Coast** | 1.79M | 17.71% |
+
+➡️ **Eastern and Central regions** dominate, contributing over **63%** of total sales. These are high-priority growth regions.
+
+---
+
+## 🧩 Sales by Sub-Category  
+
+| Sub-Category | Sales (M) |
+|:--------------|-----------:|
+| Pen | 1.62 |
+| Laptop | 1.35 |
+| Stapler | 1.24 |
+| Tablet | 1.16 |
+| Bookcase | 1.12 |
+| Paper | 0.95 |
+| Desk | 0.95 |
+| Phone | 0.90 |
+| Chair | 0.82 |
+
+Top-selling products include **Pens** and **Laptops**, while **Chairs** and **Phones** could benefit from promotional focus or pricing review.
+
+---
+
+## 🏬 Store and Category Breakdown  
+- **Garissa**, **Thika**, and **Nakuru** stores lead in total revenue.  
+- **Office Supplies** and **Technology** outperform **Furniture** across most stores.  
+- Balanced product diversity but with clear leaders emerging by store type.  
+
+---
+
+## 🧰 Tools & Technologies Used  
+- **Power BI** – Dashboard design and visualization  
+- **Excel** – Data cleaning, transformation, and validation  
+- **Mockaroo** – Data generation for simulation  
+
+---
+
+## 🚀 Recommendations  
+1. Focus expansion and marketing in **Eastern & Central regions**.  
+2. Introduce **customer loyalty programs** to boost sales-per-customer.  
+3. Address the **mid-year performance dip** with promotional campaigns.  
+4. Reassess pricing and positioning for **low-performing sub-categories**.  
+5. Continuously monitor **average order value** to maintain profitability.  
+
+---
+
+## 📈 Outcome  
+This project demonstrates how data visualization can transform static reports into actionable insights.  
+The dashboard provides executives and analysts with a real-time lens into performance, helping steer business strategy with confidence.  
+
+---
+
+## 👤 Author  
+**Sam**  
+> Data Analyst | Passionate about turning raw data into visual stories that drive impact.  
+> [Connect on LinkedIn](#) *(optional link to your profile)*  
